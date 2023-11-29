@@ -15,5 +15,18 @@
     <h2>name {{name}}</h2>
     <h3>age : {{age}}</h3>
     <p>marks:{{marks}}</p>
+
+    <!-- conditional statement -->
+    {% if age > 20 %}
+    <h2>your are ready for married</h2>
+    {% else %}
+    <h1>not are ready for married</h1>
+    {% endif %}
+
+    <!-- for statement in django  -->
+
+    {% for i in course %}
+    <h3>id :{{i.id}} courseName: {{i.course}} fee: {{i.fee}}</h3>
+    {% endfor %}
   </body>
 </html>
