@@ -4,7 +4,10 @@ from django.shortcuts import render
 
 
 def home(request):
-    return render(request,'navigation/home.html')
+
+    d={'name':'monir','age':12,'marks':[60,40,19,40]}
+
+    return render(request,'navigation/home.html',d)
 def about(request):
     return render(request,'navigation/about.html')
 def contact(request):
